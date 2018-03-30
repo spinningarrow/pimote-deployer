@@ -22,11 +22,8 @@ pubnub.addListener({
 	},
 })
 
-try {
-	pubnub.subscribe({
-		channels: [CHANNEL]
-	})
-	log('subscribed', CHANNEL)
-} catch (e) {
-	throw e
-}
+log('subscribing to', CHANNEL)
+
+pubnub.subscribe({
+	channels: [CHANNEL]
+})
