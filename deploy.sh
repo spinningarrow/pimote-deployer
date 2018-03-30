@@ -7,7 +7,7 @@ artifact_url=$2
 
 echo deploying ${app_name} from ${artifact_url}
 
-pushd $PIMOTE_DEPLOYMENT_PATH
+pushd $PIMOTE_DEPLOYMENT_DIR
 curl -s -LO ${artifact_url} && echo new ${app_name} downloaded
 popd
 
