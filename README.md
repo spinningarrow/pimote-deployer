@@ -1,14 +1,15 @@
 # pimote-deployer
 
-Deploys newer versions of the `pimote-*` apps (to be run on the Raspberry Pi).
+Deploys newer versions of the `pimote-*` apps once they've been published to
+GitHub by Travis.
 
 ## Run
 
     npm i
 
-	env PUBNUB_SUBSCRIBE_KEY=your-subscribe-key \
-		PIMOTE_DEPLOYMENT_DIR=path/to/dir \
-		npm start
+    env PUBNUB_SUBSCRIBE_KEY=your-subscribe-key \
+        PIMOTE_DEPLOYMENT_DIR=path/to/dir \
+        npm start
 
 ## Develop
 
